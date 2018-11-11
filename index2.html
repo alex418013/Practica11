@@ -9,6 +9,9 @@
         img{display: block;
     margin-left: auto;
     margin-right: auto;}
+    td.r{text-align: right}
+    td.c{text-align: center}
+    p.f{text-align: right}
     </style>
 </head>
 <body>
@@ -16,20 +19,19 @@
         <form action="ejemplo.php" method="get">
                 <table width="100%">
                     <tr>
-                        <td text-align="left">E-mail</td>
-                        <td text-align="center">Dni o Tarjeta de residencia </td>
+                        <td class="r">E-mail</td>
+                        <td class="c">Dni o Tarjeta de residencia </td>
                         <td>Fecha de nacimiento</td>
                     </tr>
                     <tr>
-                        <td text-align="left"><input required type="email" name="correo" ></td>
-                        <td text-align="center"><input required type="number" name="dni" ></td>
+                        <td class="r"><input required type="email" name="correo" ></td>
+                        <td class="c"><input required type="number" name="dni" ></td>
                         <td><input required type="date" name="nacido" min="1900"></td>
                     </tr>
                 </table>
                 <p>
-                        <div style="border : solid 2px #000000;
-                        text-align: center;
-                        padding : 4px;
+                        <div style="border : solid 2px ;
+                         padding : 4px;
                         width : 100%;
                         height : 150px;
                         overflow : auto; ">
@@ -42,10 +44,10 @@
             Puede consultar más información y detalle sobre Protección de Datos en ING aquí. <br />
           
             </div>
-                </p>
-                <p >Al pulsar enviar declara haber leido y aceptar la Declaración de Datos</p>
+                </p >
+                <p class="f">Al pulsar enviar declara haber leido y aceptar la Declaración de Datos</p>
                 <hr>
-                <input type="submit">
+            <p class="f"> <input type="submit"></p>
               </form>
 </body>
 </html>
